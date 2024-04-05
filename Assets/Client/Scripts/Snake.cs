@@ -1,13 +1,23 @@
 using UnityEngine;
 
-public class Snake : MonoBehaviour
+public class Snake : PersistentSingleton<Snake>
 {
-    [SerializeField] private float _speed;
+    [SerializeField] private SnakeMotor _movement;
+    [SerializeField] private InputSnakeHandler _input;
+    [SerializeField] private SnakeBodyPart _head;
+    [SerializeField] private SnakeBody _body;
+    
+    public SnakeMotor Movement => _movement;
+    public SnakeBodyPart Haed => _head;
+    public SnakeBody Body => _body;
 
-    public void Move(Vector2 direction)
+    private void Start()
     {
-        
+        _input.SubscribeSnake();
     }
 
-    
+    private void OnDisable()
+    {
+        _input.UnsubscribeSnake();    
+    }
 }
