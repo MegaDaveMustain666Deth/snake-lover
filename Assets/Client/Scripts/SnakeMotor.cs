@@ -1,4 +1,3 @@
-using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 
 public class SnakeMotor : MonoBehaviour
@@ -49,13 +48,19 @@ public class SnakeMotor : MonoBehaviour
 
     public void ChangeDirectionToLeft()
     {
-        _direction = Vector2Int.left;
-        Snake.Instance.Haed.transform.localRotation = Quaternion.Euler(0, -90, 0);
+        if(_direction != Vector2Int.right)
+        {
+            _direction = Vector2Int.left;
+            Snake.Instance.Haed.transform.localRotation = Quaternion.Euler(0, -90, 0);
+        }
     }
 
     public void ChangeDirectionToRight()
     {
-        _direction = Vector2Int.right;
-        Snake.Instance.Haed.transform.localRotation = Quaternion.Euler(0, 90, 0);
+        if(_direction != Vector2Int.left)
+        {
+            _direction = Vector2Int.right;
+            Snake.Instance.Haed.transform.localRotation = Quaternion.Euler(0, 90, 0);
+        }
     }
 }

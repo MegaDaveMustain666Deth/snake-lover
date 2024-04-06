@@ -13,8 +13,6 @@ public class SnakeBody : MonoBehaviour
     {
         GameObject part = Instantiate(_bodyPart, SnakeBodyParts[SnakeBodyParts.Count - 1].NextPartSpawnPoint.position, Quaternion.identity);
         SnakeBodyPart snakeBodyPart = part.GetComponent<SnakeBodyPart>();
-        // SnakeBodyParts[SnakeBodyParts.Count - 1].NextBodyPart = snakeBodyPart;
-        // snakeBodyPart.PreviousBodyPart = SnakeBodyParts[SnakeBodyParts.Count - 1].NextBodyPart;
         SnakeBodyParts.Add(snakeBodyPart);
     }
 
@@ -27,5 +25,12 @@ public class SnakeBody : MonoBehaviour
         int x = Mathf.RoundToInt(transform.position.x) + direction.x;
         int z = Mathf.RoundToInt(transform.position.z) + direction.y;
         transform.position = new Vector3(x, transform.position.y, z);
+    }
+
+    public void Dead()
+    {
+        for (int i = SnakeBodyParts.Count - 1; i > 0; i--) {
+            Destroy(SnakeBodyParts[i].gameObject);
+        }
     }
 }
