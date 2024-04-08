@@ -1,0 +1,43 @@
+.DefoltButton {
+    width: 400px;
+    height: 110px;
+    font-size: 60px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(26, 26, 26);
+    border-left-color: rgb(159, 152, 152);
+    border-right-color: rgb(159, 152, 152);
+    border-top-color: rgb(159, 152, 152);
+    border-bottom-color: rgb(159, 152, 152);
+    border-top-width: 17px;
+    border-right-width: 17px;
+    border-bottom-width: 17px;
+    border-left-width: 17px;
+}
+
+.DefoltText {
+    width: 588px;
+    height: 226px;
+    top: -168px;
+    color: rgb(255, 255, 255);
+    -unity-text-align: middle-center;
+    font-size: 72px;
+    white-space: normal;
+}
+
+.DefoltButton:hover {
+    border-top-width: 23px;
+    border-right-width: 23px;
+    border-bottom-width: 23px;
+    border-left-width: 23px;
+    width: 400px;
+    height: 110px;
+}
+
+.DefoltButton:focus {
+    border-left-color: rgb(65, 65, 65);
+    border-right-color: rgb(65, 65, 65);
+    border-top-color: rgb(65, 65, 65);
+    border-bottom-color: rgb(65, 65, 65);
+    background-color: rgb(197, 191, 191);
+    color: rgb(0, 0, 0);
+}

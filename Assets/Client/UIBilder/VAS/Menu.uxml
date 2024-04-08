@@ -1,0 +1,10 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/Client/UIBilder/Stilrs/Defolt.uss?fileID=7433441132597879392&amp;guid=03845d14c58090a4892eeb07f3e3ceb1&amp;type=3#Defolt" />
+    <ui:VisualElement style="flex-grow: 1; flex-direction: column; align-items: flex-start; justify-content: center; position: relative; height: 1080px; width: 1917px;">
+        <ui:VisualElement style="flex-grow: 1; width: 660px; background-color: rgba(0, 0, 0, 0.77); align-items: center; justify-content: center;">
+            <ui:Label tabindex="-1" text="Buhf" parse-escape-sequences="true" display-tooltip-when-elided="true" class="DefoltText" />
+            <ui:Button text="Play" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Play" class="DefoltButton DefoltButtonMMM" />
+            <ui:Button text="Exit" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Exit" class="DefoltButton" style="width: 400px; height: 110px; font-size: 70px;" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>
