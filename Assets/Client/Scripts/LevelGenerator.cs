@@ -7,14 +7,13 @@ public class LevelGenerator : MonoBehaviour
     [SerializeField] private int _tileLength;
     [SerializeField] private Transform _target;
     [SerializeField] private int _amoutTileForAddingTile;
+    [SerializeField] private Transform _startSpawn;
 
     private Queue<GameObject> _currentTileGrounds = new Queue<GameObject>();
-    private Vector3 _nextSpawn;
     private float _deleteTile;
 
     private void Start()
-    {
-        _nextSpawn = new Vector3(0, 0, -34);
+    {;
         _currentTileGrounds.Clear();
         for(int i = 0; i < _amoutTileForAddingTile; i++)
         {
@@ -26,9 +25,9 @@ public class LevelGenerator : MonoBehaviour
     private void AddTile()
     {
         int indexTale = Random.Range(0, _tileGrounds.Length);
-        _currentTileGrounds.Enqueue(Instantiate(_tileGrounds[indexTale], _nextSpawn, Quaternion.identity));
-        _nextSpawn.z += _tileLength;
-        _deleteTile = _nextSpawn.z - (_tileLength * _amoutTileForAddingTile) + 34;
+        _currentTileGrounds.Enqueue(Instantiate(_tileGrounds[indexTale], _startSpawn.position, Quaternion.identity));
+        _startSpawn.position += new Vector3(0, 0, _tileLength);
+        _deleteTile = _startSpawn.position.z - (_tileLength * _amoutTileForAddingTile) + 34;
     }
 
     [ContextMenu("Add tddile")]
