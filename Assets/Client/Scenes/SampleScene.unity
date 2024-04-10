@@ -614,6 +614,7 @@ MonoBehaviour:
   - {fileID: 8313043134523538205, guid: f74bfa036827fd94e8537fa333f54dbc, type: 3}
   _backgroundObjects:
   - {fileID: 8080258055903139188, guid: 0a67af345558ff74f9a37b25381295e4, type: 3}
+  - {fileID: 7845900246096353999, guid: 0a27a754fa6149346b632d8413132163, type: 3}
   _tileLength: 17
   _amoutTileForAdding: 5
   _amoutObjectForAdding: 5
@@ -1392,7 +1393,7 @@ Transform:
   m_GameObject: {fileID: 1787842751}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -21, y: 7.1, z: -313}
+  m_LocalPosition: {x: -21, y: 7.1, z: -147.1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

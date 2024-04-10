@@ -43,7 +43,7 @@ public class LevelGenerator : MonoBehaviour
         int indexTale = Random.Range(0, _backgroundObjects.Length);
         _currentBackgroundObjects.Enqueue(Instantiate(_backgroundObjects[indexTale], _startSpawnObjects.position, Quaternion.identity));
         _startSpawnObjects.position += new Vector3(0, 0, spawnObj);
-        _deleteObject = _startSpawnObjects.position.z - (spawnObj * _amoutObjectForAdding) + _minDistanceBetweenObjects;
+        _deleteObject = _startSpawnObjects.position.z - (spawnObj * _amoutObjectForAdding) + _minDistanceBetweenObjects * 3;
     }
 
     [ContextMenu("Add tile")]
