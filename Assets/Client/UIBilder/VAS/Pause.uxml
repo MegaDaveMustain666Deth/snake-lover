@@ -2,12 +2,10 @@
     <Style src="project://database/Assets/Client/UIBilder/Stilrs/Defolt.uss?fileID=7433441132597879392&amp;guid=03845d14c58090a4892eeb07f3e3ceb1&amp;type=3#Defolt" />
     <ui:VisualElement style="flex-grow: 1; align-items: center; justify-content: center;">
         <ui:VisualElement style="flex-grow: 1; width: 622px; align-items: center; justify-content: center;">
-            <ui:VisualElement style="flex-grow: 1; position: absolute; height: 508px; width: 614px; background-color: rgba(0, 0, 0, 0.81); align-items: center; justify-content: center;">
-                <ui:Button text="Continion" parse-escape-sequences="true" display-tooltip-when-elided="true" class="DefoltButton" style="font-size: 50px;" />
-                <ui:Button text="Exit to menu" parse-escape-sequences="true" display-tooltip-when-elided="true" class="DefoltButton" style="font-size: 50px;" />
-            </ui:VisualElement>
-            <ui:VisualElement style="flex-grow: 1; position: absolute; top: 238px; height: 49px; width: 302px; background-color: rgba(0, 0, 0, 0.81); justify-content: space-between;">
-                <ui:Label tabindex="-1" text="Pause" parse-escape-sequences="true" display-tooltip-when-elided="true" class="DefoltText" style="height: 73px; -unity-text-align: middle-center; top: 38px; width: 294px;" />
+            <ui:VisualElement style="flex-grow: 1; position: relative; height: 508px; width: 614px; background-color: rgba(0, 0, 0, 0.81); align-items: center; justify-content: center;">
+                <ui:Label tabindex="-1" text="Pause" parse-escape-sequences="true" display-tooltip-when-elided="true" class="DefoltText" style="height: 73px; -unity-text-align: middle-center; top: -63px; width: 294px;" />
+                <ui:Button text="Continue" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Continue" class="DefoltButton" style="font-size: 50px;" />
+                <ui:Button text="Exit to menu" parse-escape-sequences="true" display-tooltip-when-elided="true" name="ExitToMenu" class="DefoltButton" style="font-size: 50px;" />
             </ui:VisualElement>
         </ui:VisualElement>
     </ui:VisualElement>

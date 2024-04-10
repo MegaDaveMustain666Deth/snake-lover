@@ -26,13 +26,16 @@ public class InputSnakeHandler : MonoBehaviour
         _input.Player.Down.started += OnDown;
         _input.Player.Left.started += OnLeft;
         _input.Player.Right.started += OnRight;
+        _input.Player.Pause.started += OnOpenPause;
     }
-        public void UnsubscribeSnake()
+
+    public void UnsubscribeSnake()
     {
         _input.Player.Up.started -= OnUp;
         _input.Player.Down.started -= OnDown;
         _input.Player.Left.started -= OnLeft;
         _input.Player.Right.started -= OnRight;
+        _input.Player.Pause.started -= OnOpenPause;
     }
 
     private void OnUp(InputAction.CallbackContext context)
@@ -53,5 +56,10 @@ public class InputSnakeHandler : MonoBehaviour
     private void OnRight(InputAction.CallbackContext context)
     {
         Snake.Instance.Movement.ChangeDirectionToRight();
+    }
+
+    private void OnOpenPause(InputAction.CallbackContext context)
+    {
+        UIManager.Instance.Pause.OpenPause();
     }
 }

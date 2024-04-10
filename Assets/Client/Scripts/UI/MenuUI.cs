@@ -8,15 +8,12 @@ public class MenuUI : UIToolcitController
 
     private VisualElement _menu;
 
-    protected override void Start()
-    {
-        Initialize();
-    }
     protected override void Initialize()
     {
         _menu = _MenuAsset.CloneTree();
         OpenMenu();
     }
+
     public void OpenMenu()
     {
         ResetContainer(_menu);
@@ -24,7 +21,11 @@ public class MenuUI : UIToolcitController
         Button start = _container.Q<Button>("Play");
         Button exit = _container.Q<Button>("Exit");
 
-        start.clicked += () => SceneManager.LoadScene("SampleScene");
+        start.clicked += () =>
+        {
+            SceneManager.LoadScene("SampleScene");
+            ResetContainer(null);
+        };
         exit.clicked += () => Application.Quit();
     }
 }
