@@ -306,6 +306,7 @@ GameObject:
   - component: {fileID: 793045840}
   - component: {fileID: 793045842}
   - component: {fileID: 793045841}
+  - component: {fileID: 793045843}
   m_Layer: 5
   m_Name: UIDocument
   m_TagString: Untagged
@@ -357,6 +358,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _MenuAsset: {fileID: 9197481963319205126, guid: b4a30c62487f9d245b4f2936fade3fe6, type: 3}
+  _save: {fileID: 793045843}
 --- !u!114 &793045841
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -384,6 +386,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _pauseAsset: {fileID: 9197481963319205126, guid: 7413a3ce9e819f94abea55dcce5abc71, type: 3}
   _menu: {fileID: 793045840}
+--- !u!114 &793045843
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 793045837}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd09bdd13f38e5f4d8640c8ba7421a45, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
