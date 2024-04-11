@@ -17,6 +17,7 @@ public class Snake : PersistentSingleton<Snake>
 
     private void Start()
     {
+        AmountApples = 0;
         _input.SubscribeSnake();
     }
 

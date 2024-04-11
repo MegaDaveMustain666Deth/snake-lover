@@ -17,10 +17,13 @@ public class ShopUI : UIToolcitController
 
     public void OpenShop()
     {
+        _amountApples = PlayerPrefs.GetInt("Amount Apples");
         ResetContainer(_shop);
 
         Button leave = _container.Q<Button>("Leave");
         Label apples = _container.Q<Label>("Apples");
+
+        apples.text = _amountApples.ToString();
 
         leave.clicked += () => _menu.OpenMenu();
 

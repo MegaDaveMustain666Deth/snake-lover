@@ -49,6 +49,8 @@ public class PauseUI : UIToolcitController
         Time.timeScale = 1;
         _onPause = false;
         PlayerPrefs.SetFloat("MaxScore", Snake.Instance.MaxScore);
+        int amountapples = PlayerPrefs.GetInt("Amount Apples");
+        PlayerPrefs.SetInt("Amount Apples", Snake.Instance.AmountApples + amountapples);
         Destroy(Snake.Instance.gameObject);
         SceneManager.LoadScene("Menu");
         _menu.OpenMenu();
