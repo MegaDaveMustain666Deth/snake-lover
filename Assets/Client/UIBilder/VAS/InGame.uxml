@@ -6,7 +6,7 @@
         <ui:Label tabindex="-1" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Score" style="height: 59px; width: 629px; -unity-text-align: middle-right; font-size: 60px; color: rgb(255, 255, 255); background-color: rgba(0, 0, 0, 0.78); align-self: flex-start;">
             <ui:Label tabindex="-1" text="Score:" parse-escape-sequences="true" display-tooltip-when-elided="true" style="width: 186px; font-size: 60px;" />
         </ui:Label>
-        <ui:Label tabindex="-1" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Apples" style="height: 91px; width: 476px; -unity-text-align: flex-start; font-size: 77px; color: rgb(255, 255, 255); background-color: rgba(0, 0, 0, 0.78); align-self: flex-start;">
+        <ui:Label tabindex="-1" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Apples" style="height: 91px; width: 476px; -unity-text-align: upper-center; font-size: 77px; color: rgb(255, 255, 255); background-color: rgba(0, 0, 0, 0.78); align-self: flex-start;">
             <ui:Label tabindex="-1" parse-escape-sequences="true" display-tooltip-when-elided="true" style="width: 82px; background-image: url(&apos;project://database/Assets/Client/Materials/pomme-large.png?fileID=2800000&amp;guid=61549e2acb548704e8c30941f01b2b5b&amp;type=3#pomme-large&apos;);" />
         </ui:Label>
     </ui:VisualElement>
