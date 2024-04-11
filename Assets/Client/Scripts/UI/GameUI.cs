@@ -8,6 +8,7 @@ public class GameUI : UIToolcitController
     private VisualElement _gameUI;
     private Label score;
     private Label apples;
+    private Label MaxScore;
 
     protected override void Initialize()
     {
@@ -19,10 +20,13 @@ public class GameUI : UIToolcitController
         ResetContainer(_gameUI);
         score = _container.Q<Label>("Score");
         apples = _container.Q<Label>("Apples");
+        MaxScore = _container.Q<Label>("MaxScore");
     }
 
-    public void UpdateApples()
+    public void UpdateAll()
     {
         apples.text = Snake.Instance.AmountApples.ToString();
+        score.text = Mathf.RoundToInt(Snake.Instance.Score).ToString();
+        MaxScore.text = Mathf.RoundToInt(Snake.Instance.MaxScore).ToString();
     }
 }

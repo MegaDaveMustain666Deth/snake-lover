@@ -6,5 +6,5 @@ public class UIManager : PersistentSingleton<UIManager>
     [SerializeField] private GameUI _gameUI;
 
     public PauseUI Pause => _pause;
-    public GameUI Game => _gameUI;
+    public GameUI GameUi => _gameUI;
 }

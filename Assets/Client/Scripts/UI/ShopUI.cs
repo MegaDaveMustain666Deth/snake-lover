@@ -20,6 +20,7 @@ public class ShopUI : UIToolcitController
         ResetContainer(_shop);
 
         Button leave = _container.Q<Button>("Leave");
+        Label apples = _container.Q<Label>("Apples");
 
         leave.clicked += () => _menu.OpenMenu();
 

@@ -12,6 +12,8 @@ public class Snake : PersistentSingleton<Snake>
     public SnakeBody Body => _body;
 
     public int AmountApples;
+    public float Score;
+    public float MaxScore;
 
     private void Start()
     {
@@ -26,6 +28,15 @@ public class Snake : PersistentSingleton<Snake>
     public void PlusApple()
     {
         AmountApples++;
-        UIManager.Instance.Game.UpdateApples();
+    }
+
+    private void Update()
+    {
+        if (Score >= MaxScore)
+        {
+            MaxScore = Score;
+        }
+        Score += Time.deltaTime * 2;
+        UIManager.Instance.GameUi.UpdateAll();
     }
 }

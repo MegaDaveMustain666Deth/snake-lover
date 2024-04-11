@@ -5,7 +5,6 @@ using UnityEngine.SceneManagement;
 public class MenuUI : UIToolcitController
 {
     [SerializeField] private VisualTreeAsset _MenuAsset;
-    [SerializeField] private SaveManager _saveManager;
     [SerializeField] private ShopUI _shop;
     [SerializeField] private GameUI _gameIU;
 
@@ -14,7 +13,6 @@ public class MenuUI : UIToolcitController
     protected override void Initialize()
     {
         _menu = _MenuAsset.CloneTree();
-        _saveManager.loadGameData();
         OpenMenu();
     }
 
@@ -26,6 +24,9 @@ public class MenuUI : UIToolcitController
         Button shop = _container.Q<Button>("Shop");
         Button exit = _container.Q<Button>("Exit");
 
+        Label MaxScore = _container.Q<Label>("MaxScore");
+        Label apples = _container.Q<Label>("Apples");
+
         start.clicked += () =>
         {
             SceneManager.LoadScene("SampleScene");
@@ -34,8 +35,9 @@ public class MenuUI : UIToolcitController
         shop.clicked += () => _shop.OpenShop();
         exit.clicked += () =>
         {
-            _saveManager.SaveGame();
             Application.Quit();
         };
+        MaxScore.text = Mathf.RoundToInt(PlayerPrefs.GetFloat("MaxScore")).ToString();
+        apples.text = Mathf.RoundToInt(PlayerPrefs.GetFloat("")).ToString();
     }
 }
