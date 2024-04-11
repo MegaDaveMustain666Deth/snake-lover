@@ -56,19 +56,13 @@ public class ShopUI : UIToolcitController
     private void ChangeHead(int cost)
     {
         if (_amountApples < cost) return;
-        else 
-        {
-
-        }
+        SkinsManger.Instance.ChangeHead(cost);
     }
 
     private void ChandeBody(int cost)
     {
         if (_amountApples < cost) return;
-        else
-        {
-
-        }
+        SkinsManger.Instance.ChangeBody(cost);
     }
 
     private void UpdateApples()
