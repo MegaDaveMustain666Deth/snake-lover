@@ -38,24 +38,23 @@ public class SnakeBody : MonoBehaviour
     public void Dead()
     {
         for (int i = SnakeBodyParts.Count - 1; i > 0; i--) {
-            Destroy(SnakeBodyParts[i].gameObject);
-            StartCoroutine(DestroyBody());
+            StartCoroutine(DestroyBody(i));
         }
         Rigidbody rb = Snake.Instance.Haed.GetComponent<Rigidbody>();
         rb.AddForce(Vector3.up * 10, ForceMode.Impulse);
         StartCoroutine(CloseGame());
-        PlayerPrefs.SetFloat("MaxScore", Snake.Instance.MaxScore);
-
-        SceneManager.LoadScene(0);
     }
 
-    private IEnumerator DestroyBody()
+    private IEnumerator DestroyBody(int i)
     {
-        yield return new WaitForSeconds(0.3f);
+        yield return new WaitForSeconds(1);
+        Destroy(SnakeBodyParts[i].gameObject);
     }
 
     private IEnumerator CloseGame()
     {
         yield return new WaitForSeconds(2);
+        PlayerPrefs.SetFloat("MaxScore", Snake.Instance.MaxScore);
+        UIManager.Instance.Pause.ExitToMenu();
     }
 }
