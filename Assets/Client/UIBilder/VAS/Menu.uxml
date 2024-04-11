@@ -2,7 +2,7 @@
     <Style src="project://database/Assets/Client/UIBilder/Stilrs/Defolt.uss?fileID=7433441132597879392&amp;guid=03845d14c58090a4892eeb07f3e3ceb1&amp;type=3#Defolt" />
     <ui:VisualElement style="flex-grow: 1; flex-direction: column-reverse; align-items: flex-start; justify-content: center; position: relative; height: 1080px; width: 1917px;">
         <ui:VisualElement style="flex-grow: 1; width: 660px; background-color: rgba(0, 0, 0, 0.77); align-items: center; justify-content: center;">
-            <ui:Label tabindex="-1" text="Snake Chamer" parse-escape-sequences="true" display-tooltip-when-elided="true" class="DefoltText">
+            <ui:Label tabindex="-1" text="Snake Chamer" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Name" class="DefoltText">
                 <ui:Label tabindex="-1" parse-escape-sequences="true" display-tooltip-when-elided="true" name="MaxScore" style="top: -259px; left: 1081px; background-color: rgba(0, 0, 0, 0.78); height: 118px; width: 810px; -unity-text-align: middle-right;" />
                 <ui:Label tabindex="-1" text="Max score:" parse-escape-sequences="true" display-tooltip-when-elided="true" style="top: -386px; left: 1092px; background-color: rgba(0, 0, 0, 0); height: 118px; width: 368px;" />
                 <ui:Label tabindex="-1" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Apples" style="top: -357px; left: 1283px; background-color: rgba(0, 0, 0, 0.78); height: 118px; width: 605px; -unity-text-align: middle-right;" />
