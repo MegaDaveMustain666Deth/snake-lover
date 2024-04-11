@@ -2,7 +2,7 @@ using System.Runtime.Serialization.Formatters.Binary;
 using System.IO;
 using UnityEngine;
 
-public class SaveManager : PersistentSingleton<SaveManager>
+public class SaveManager : MonoBehaviour
 {
     public void SaveGame()
     {

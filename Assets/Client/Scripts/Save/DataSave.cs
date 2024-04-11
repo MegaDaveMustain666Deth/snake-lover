@@ -5,6 +5,6 @@ namespace DataSave
     public class Save
     {
         public float _maxScore;
-        public float _coins;
+        public int _apples;
     }
 }
