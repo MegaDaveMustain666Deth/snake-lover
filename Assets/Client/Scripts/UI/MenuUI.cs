@@ -38,6 +38,6 @@ public class MenuUI : UIToolcitController
             Application.Quit();
         };
         MaxScore.text = Mathf.RoundToInt(PlayerPrefs.GetFloat("MaxScore")).ToString();
-        apples.text = Mathf.RoundToInt(PlayerPrefs.GetFloat("")).ToString();
+        apples.text = PlayerPrefs.GetInt("Amount Apples").ToString();
     }
 }
