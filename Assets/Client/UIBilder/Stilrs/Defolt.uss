@@ -17,7 +17,7 @@
 .DefoltText {
     width: 588px;
     height: 226px;
-    top: -168px;
+    top: auto;
     color: rgb(255, 255, 255);
     -unity-text-align: middle-center;
     font-size: 72px;

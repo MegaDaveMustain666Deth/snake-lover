@@ -1,0 +1,13 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:VisualElement style="flex-grow: 1; align-items: auto; flex-direction: column; justify-content: flex-start; align-self: flex-start;">
+        <ui:Label tabindex="-1" parse-escape-sequences="true" display-tooltip-when-elided="true" name="MaxScore" style="height: 96px; width: 759px; -unity-text-align: middle-right; font-size: 60px; color: rgb(255, 255, 255); background-color: rgba(0, 0, 0, 0.78);">
+            <ui:Label tabindex="-1" text="Max score:" parse-escape-sequences="true" display-tooltip-when-elided="true" style="width: 318px; font-size: 60px;" />
+        </ui:Label>
+        <ui:Label tabindex="-1" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Score" style="height: 59px; width: 629px; -unity-text-align: middle-right; font-size: 60px; color: rgb(255, 255, 255); background-color: rgba(0, 0, 0, 0.78); align-self: flex-start;">
+            <ui:Label tabindex="-1" text="Score:" parse-escape-sequences="true" display-tooltip-when-elided="true" style="width: 186px; font-size: 60px;" />
+        </ui:Label>
+        <ui:Label tabindex="-1" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Apples" style="height: 91px; width: 476px; -unity-text-align: flex-start; font-size: 77px; color: rgb(255, 255, 255); background-color: rgba(0, 0, 0, 0.78); align-self: flex-start;">
+            <ui:Label tabindex="-1" parse-escape-sequences="true" display-tooltip-when-elided="true" style="width: 82px; background-image: url(&apos;project://database/Assets/Client/Materials/pomme-large.png?fileID=2800000&amp;guid=61549e2acb548704e8c30941f01b2b5b&amp;type=3#pomme-large&apos;);" />
+        </ui:Label>
+    </ui:VisualElement>
+</ui:UXML>

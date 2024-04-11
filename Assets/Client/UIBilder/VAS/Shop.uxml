@@ -1,0 +1,38 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/Client/UIBilder/Stilrs/Defolt.uss?fileID=7433441132597879392&amp;guid=03845d14c58090a4892eeb07f3e3ceb1&amp;type=3#Defolt" />
+    <ui:VisualElement style="flex-grow: 1; align-items: center; justify-content: center;">
+        <ui:Label tabindex="-1" parse-escape-sequences="true" display-tooltip-when-elided="true" class="DefoltText" style="height: 82px; width: 256px; left: -476px; top: 102px; background-color: rgba(0, 0, 0, 0.78);">
+            <ui:Button text="Leave" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Leave" style="height: 73px; border-left-color: rgba(0, 0, 0, 0); border-right-color: rgba(0, 0, 0, 0); border-top-color: rgba(0, 0, 0, 0); border-bottom-color: rgba(0, 0, 0, 0); background-color: rgba(188, 188, 188, 0); font-size: 38px;" />
+        </ui:Label>
+        <ui:Label tabindex="-1" parse-escape-sequences="true" display-tooltip-when-elided="true" class="DefoltText" style="height: 82px; width: 256px; left: 471px; top: 12px; background-color: rgba(0, 0, 0, 0.78);">
+            <ui:Label tabindex="-1" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Apples" style="height: 68px; width: 163px; left: 11px; font-size: 60px;" />
+        </ui:Label>
+        <ui:Label tabindex="-1" text="Shop" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Label" class="DefoltText" style="width: 678px; top: -87px; height: 92px; background-color: rgba(0, 0, 0, 0.78);" />
+        <ui:ScrollView scroll-deceleration-rate="0,135" elasticity="0,1" horizontal-scroller-visibility="Hidden" vertical-scroller-visibility="Hidden" touch-scroll-type="Clamped" style="height: 696px; width: 1218px; background-color: rgba(0, 0, 0, 0.78); top: -83px;">
+            <ui:VisualElement name="text" style="flex-grow: 1; flex-direction: row;">
+                <ui:Label tabindex="-1" text="Snake head" parse-escape-sequences="true" display-tooltip-when-elided="true" class="DefoltText" style="height: 147px; top: auto;" />
+            </ui:VisualElement>
+            <ui:VisualElement style="flex-grow: 1; flex-direction: row;">
+                <ui:Button text="10" parse-escape-sequences="true" display-tooltip-when-elided="true" name="GreenHead" style="height: 172px; width: 411px; color: rgb(0, 0, 0); font-size: 45px; border-left-color: rgb(0, 255, 13); border-right-color: rgb(0, 255, 13); border-top-color: rgb(0, 255, 13); border-bottom-color: rgb(0, 255, 13); background-color: rgb(1, 255, 0);" />
+                <ui:Button text="15" parse-escape-sequences="true" display-tooltip-when-elided="true" name="RedHead" style="height: 172px; width: 398px; color: rgb(0, 0, 0); font-size: 45px; background-color: rgb(255, 0, 0);" />
+                <ui:Button text="25" parse-escape-sequences="true" display-tooltip-when-elided="true" name="BlueHead" style="height: 172px; width: 382px; color: rgb(0, 0, 0); font-size: 45px; background-color: rgb(0, 41, 255); border-left-color: rgb(0, 10, 255); border-right-color: rgb(0, 10, 255); border-top-color: rgb(0, 10, 255); border-bottom-color: rgb(0, 10, 255);" />
+            </ui:VisualElement>
+            <ui:VisualElement style="flex-grow: 1; flex-direction: row;">
+                <ui:Button text="35" parse-escape-sequences="true" display-tooltip-when-elided="true" name="YellowHead" style="height: 172px; width: 411px; color: rgb(0, 0, 0); font-size: 45px; background-color: rgb(255, 243, 0); border-left-color: rgb(255, 249, 4); border-right-color: rgb(255, 249, 4); border-top-color: rgb(255, 249, 4); border-bottom-color: rgb(255, 249, 4);" />
+                <ui:Button text="50" parse-escape-sequences="true" display-tooltip-when-elided="true" name="OrangeHead" style="height: 172px; width: 398px; color: rgb(0, 0, 0); font-size: 45px; background-color: rgb(255, 142, 0); border-left-color: rgb(255, 150, 0); border-right-color: rgb(255, 150, 0); border-top-color: rgb(255, 150, 0); border-bottom-color: rgb(255, 150, 0);" />
+                <ui:Button text="70" parse-escape-sequences="true" display-tooltip-when-elided="true" name="PinkHead" style="height: 172px; width: 382px; color: rgb(0, 0, 0); font-size: 45px; background-color: rgb(255, 0, 225); border-left-color: rgb(255, 0, 232); border-right-color: rgb(255, 0, 232); border-top-color: rgb(255, 0, 232); border-bottom-color: rgb(255, 0, 232);" />
+            </ui:VisualElement>
+            <ui:Label tabindex="-1" text="Snake body" parse-escape-sequences="true" display-tooltip-when-elided="true" style="height: 163px; top: auto; color: rgb(255, 255, 255); font-size: 72px; -unity-text-align: middle-center; width: 610px;" />
+            <ui:VisualElement style="flex-grow: 1; flex-direction: row;">
+                <ui:Button text="10" parse-escape-sequences="true" display-tooltip-when-elided="true" name="GreenBody" style="height: 172px; width: 411px; color: rgb(0, 0, 0); font-size: 45px; border-left-color: rgb(0, 255, 13); border-right-color: rgb(0, 255, 13); border-top-color: rgb(0, 255, 13); border-bottom-color: rgb(0, 255, 13); background-color: rgb(1, 255, 0);" />
+                <ui:Button text="15" parse-escape-sequences="true" display-tooltip-when-elided="true" name="RedBody" style="height: 172px; width: 398px; color: rgb(0, 0, 0); font-size: 45px; background-color: rgb(255, 0, 0); border-left-color: rgb(255, 0, 0); border-right-color: rgb(255, 0, 0); border-top-color: rgb(255, 0, 0); border-bottom-color: rgb(255, 0, 0);" />
+                <ui:Button text="25" parse-escape-sequences="true" display-tooltip-when-elided="true" name="BlueBody" style="height: 172px; width: 382px; color: rgb(0, 0, 0); font-size: 45px; background-color: rgb(0, 41, 255); border-left-color: rgb(16, 0, 255); border-right-color: rgb(16, 0, 255); border-top-color: rgb(16, 0, 255); border-bottom-color: rgb(16, 0, 255);" />
+            </ui:VisualElement>
+            <ui:VisualElement style="flex-grow: 1; flex-direction: row;">
+                <ui:Button text="35" parse-escape-sequences="true" display-tooltip-when-elided="true" name="YellowBody" style="height: 172px; width: 411px; color: rgb(0, 0, 0); font-size: 45px; background-color: rgb(255, 243, 0); border-left-color: rgb(245, 255, 0); border-right-color: rgb(245, 255, 0); border-top-color: rgb(245, 255, 0); border-bottom-color: rgb(245, 255, 0);" />
+                <ui:Button text="50" parse-escape-sequences="true" display-tooltip-when-elided="true" name="OrangeBody" style="height: 172px; width: 398px; color: rgb(0, 0, 0); font-size: 45px; background-color: rgb(255, 142, 0); border-left-color: rgb(255, 136, 0); border-right-color: rgb(255, 136, 0); border-top-color: rgb(255, 136, 0); border-bottom-color: rgb(255, 136, 0);" />
+                <ui:Button text="70" parse-escape-sequences="true" display-tooltip-when-elided="true" name="PinkBody" style="height: 172px; width: 382px; color: rgb(0, 0, 0); font-size: 45px; background-color: rgb(255, 0, 225); border-left-color: rgb(255, 0, 235); border-right-color: rgb(255, 0, 235); border-top-color: rgb(255, 0, 235); border-bottom-color: rgb(255, 0, 235);" />
+            </ui:VisualElement>
+        </ui:ScrollView>
+    </ui:VisualElement>
+</ui:UXML>

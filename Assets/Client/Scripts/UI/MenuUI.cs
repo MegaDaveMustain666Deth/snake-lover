@@ -5,12 +5,16 @@ using UnityEngine.SceneManagement;
 public class MenuUI : UIToolcitController
 {
     [SerializeField] private VisualTreeAsset _MenuAsset;
+    [SerializeField] private SaveManager _saveManager;
+    [SerializeField] private ShopUI _shop;
+    [SerializeField] private GameUI _gameIU;
 
     private VisualElement _menu;
 
     protected override void Initialize()
     {
         _menu = _MenuAsset.CloneTree();
+        _saveManager.loadGameData();
         OpenMenu();
     }
 
@@ -24,8 +28,12 @@ public class MenuUI : UIToolcitController
         start.clicked += () =>
         {
             SceneManager.LoadScene("SampleScene");
-            ResetContainer(null);
+            _gameIU.InGame();
         };
-        exit.clicked += () => Application.Quit();
+        exit.clicked += () =>
+        {
+            _saveManager.SaveGame();
+            Application.Quit();
+        };
     }
 }

@@ -7,6 +7,7 @@ public class PauseUI : UIToolcitController
 {
     [SerializeField] private VisualTreeAsset _pauseAsset;
     [SerializeField] private MenuUI _menu;
+    [SerializeField] private GameUI _gameUI;
 
     private VisualElement _pause;
     private bool _onPause = false;
@@ -38,14 +39,17 @@ public class PauseUI : UIToolcitController
 
     private void ClosePause()
     {
-        ResetContainer(null);
+        _gameUI.InGame();
         Time.timeScale = 1;
         _onPause = false;
     }
 
     private void ExitToMenu()
     {
-        ClosePause();
+        Time.timeScale = 1;
+        _onPause = false;
+        DataSave.Save save = new DataSave.Save();
+        save._apples = Snake.Instance._emountApples;
         Destroy(Snake.Instance.gameObject);
         SceneManager.LoadScene("Menu");
         _menu.OpenMenu();
