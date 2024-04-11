@@ -1,5 +1,5 @@
 using System.Collections.Generic;
-using UnityEditor.SceneManagement;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class LevelGenerator : MonoBehaviour
@@ -7,7 +7,9 @@ public class LevelGenerator : MonoBehaviour
 
     [SerializeField] private GameObject[] _tileGrounds;
     [SerializeField] private GameObject[] _backgroundObjects;
+    [SerializeField] private GameObject _apple;
     [SerializeField] private int _tileLength;
+    [SerializeField] private int _tileWeight;
     [SerializeField] private int _amoutTileForAdding;
     [SerializeField] private int _amoutObjectForAdding;
     [SerializeField] private Transform _startSpawn;
@@ -20,9 +22,11 @@ public class LevelGenerator : MonoBehaviour
     private float _deleteTile;
     private float _deleteObject;
     private Transform _player;
+    private int _spawnApples = 0;
 
     private void Start()
     {
+
         _player = Snake.Instance.transform;
         _currentTileGrounds.Clear();
         _currentBackgroundObjects.Clear();
@@ -51,6 +55,24 @@ public class LevelGenerator : MonoBehaviour
     {
         int indexTale = Random.Range(0, _tileGrounds.Length);
         _currentTileGrounds.Enqueue(Instantiate(_tileGrounds[indexTale], _startSpawn.position, Quaternion.identity));
+        _spawnApples++;
+
+        if(_spawnApples > Random.Range(2,4))
+        {
+            _spawnApples = 0;
+            Vector3 _spawnPointApple = new Vector3(Random.Range(-_tileWeight/2, _tileWeight/2), 3, Random.Range(-_tileLength/2, _tileLength/2));
+            GameObject apple = Instantiate(_apple, _startSpawn.position + _spawnPointApple, Quaternion.identity);
+            bool placeForAppleIsFree = false;
+            while(placeForAppleIsFree)
+            {
+                placeForAppleIsFree = Physics.Raycast(apple.transform.position, Vector3.down, 2);
+                if(!placeForAppleIsFree)
+                {
+                    apple.transform.position += Vector3.forward;
+                }
+            }
+            apple.transform.position -= Vector3.up * 2;
+        }
         _startSpawn.position += new Vector3(0, 0, _tileLength);
         _deleteTile = _startSpawn.position.z - (_tileLength * _amoutTileForAdding) + 34;
     }

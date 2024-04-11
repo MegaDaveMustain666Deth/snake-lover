@@ -6,7 +6,12 @@ public class SnakeBodyPart : HitBox
 
     private void OnTriggerEnter(Collider other)
     {
-        if(other.gameObject.TryGetComponent(out HitBox hitBox))
+        if(other.gameObject.CompareTag("Apple"))
+        {
+            Snake.Instance.Body.AddBodyPart();
+            Destroy(other.gameObject);
+        }
+        else if(other.gameObject.CompareTag("Barrier"))
         {
             Snake.Instance.Body.Dead();
         }

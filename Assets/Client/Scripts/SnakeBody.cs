@@ -20,6 +20,7 @@ public class SnakeBody : MonoBehaviour
     {
         for (int i = SnakeBodyParts.Count - 1; i > 0; i--) {
             SnakeBodyParts[i].transform.position = SnakeBodyParts[i - 1].transform.position;
+            SnakeBodyParts[i].transform.localRotation = SnakeBodyParts[i - 1].transform.localRotation;
         }
 
         int x = Mathf.RoundToInt(transform.position.x) + direction.x;
