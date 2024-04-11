@@ -1,4 +1,6 @@
+using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 using UnityEngine;
 
 public class SnakeBody : MonoBehaviour
@@ -37,8 +39,23 @@ public class SnakeBody : MonoBehaviour
     {
         for (int i = SnakeBodyParts.Count - 1; i > 0; i--) {
             Destroy(SnakeBodyParts[i].gameObject);
+            StartCoroutine(DestroyBody());
         }
         Rigidbody rb = Snake.Instance.Haed.GetComponent<Rigidbody>();
         rb.AddForce(Vector3.up * 10, ForceMode.Impulse);
+        StartCoroutine(CloseGame());
+        PlayerPrefs.SetFloat("MaxScore", Snake.Instance.MaxScore);
+
+        SceneManager.LoadScene(0);
+    }
+
+    private IEnumerator DestroyBody()
+    {
+        yield return new WaitForSeconds(0.3f);
+    }
+
+    private IEnumerator CloseGame()
+    {
+        yield return new WaitForSeconds(2);
     }
 }
