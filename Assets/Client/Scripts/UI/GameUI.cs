@@ -23,6 +23,6 @@ public class GameUI : UIToolcitController
 
     public void UpdateApples()
     {
-        apples.text = Snake.Instance._emountApples.ToString();
+        apples.text = Snake.Instance.AmountApples.ToString();
     }
 }

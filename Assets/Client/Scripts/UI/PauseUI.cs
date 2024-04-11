@@ -49,7 +49,7 @@ public class PauseUI : UIToolcitController
         Time.timeScale = 1;
         _onPause = false;
         DataSave.Save save = new DataSave.Save();
-        save._apples = Snake.Instance._emountApples;
+        save.Apples = Snake.Instance.AmountApples;
         Destroy(Snake.Instance.gameObject);
         SceneManager.LoadScene("Menu");
         _menu.OpenMenu();

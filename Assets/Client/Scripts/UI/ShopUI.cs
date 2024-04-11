@@ -13,7 +13,7 @@ public class ShopUI : UIToolcitController
     {
         _shop = _shopAsset.CloneTree();
         DataSave.Save save = new DataSave.Save ();
-        _amountApples = save._apples;
+        _amountApples = save.Apples;
     }
 
     public void OpenShop()

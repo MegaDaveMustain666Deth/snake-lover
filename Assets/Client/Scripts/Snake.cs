@@ -6,13 +6,12 @@ public class Snake : PersistentSingleton<Snake>
     [SerializeField] private InputSnakeHandler _input;
     [SerializeField] private SnakeBodyPart _head;
     [SerializeField] private SnakeBody _body;
-    [SerializeField] private GameUI _gameUI;
     
     public SnakeMotor Movement => _movement;
-    public SnakeBodyPart Head => _head;
+    public SnakeBodyPart Haed => _head;
     public SnakeBody Body => _body;
 
-    public int _emountApples;
+    public int AmountApples;
 
     private void Start()
     {
@@ -26,7 +25,7 @@ public class Snake : PersistentSingleton<Snake>
 
     public void PlusApple()
     {
-        _emountApples++;
-        _gameUI.UpdateApples();
+        AmountApples++;
+        UIManager.Instance.Game.UpdateApples();
     }
 }
