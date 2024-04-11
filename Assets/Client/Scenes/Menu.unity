@@ -418,6 +418,66 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _gameAsset: {fileID: 9197481963319205126, guid: bedb600223e386b42b36d2547cdb6e8a, type: 3}
+--- !u!1 &932616126
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 932616127}
+  - component: {fileID: 932616128}
+  m_Layer: 0
+  m_Name: SkinsManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &932616127
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 932616126}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 18.6349, y: -0.11997154, z: -10.100344}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &932616128
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 932616126}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc10eef749fdc3d4992bcb6e31ff529b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  GreenHead: {fileID: 1422490647282426386, guid: 847703c5bc404a64784811f35f3a1450, type: 3}
+  RedHead: {fileID: 3622838725916905969, guid: 603f56a14d066a14d9c1fda0576d7838, type: 3}
+  BlueHead: {fileID: 4890903773683614779, guid: bc1afa17f389edd47b75abde6690054d, type: 3}
+  YellowHead: {fileID: 6853847401605033053, guid: 94b23d1608bfbe7459081e1e5e9a1353, type: 3}
+  OrangeHead: {fileID: 8783234843925941477, guid: b7cf0c67c1a402e4caa519bf5c1b42d4, type: 3}
+  PinkHead: {fileID: 7821884483907274697, guid: bd63c62ab71613f47b9142d8d7bcb1fd, type: 3}
+  GreenBody: {fileID: 7538253445624856215, guid: 90f621ab428e0ce47be12c8ad3313bf4, type: 3}
+  RedBody: {fileID: 5513693267275166472, guid: 51912d1de53b47c459319c6b914476f9, type: 3}
+  BlueBody: {fileID: 2169917845860433158, guid: 8c8ef80aece73fa46b8d86f758004bdf, type: 3}
+  YellowBody: {fileID: 7571060245227032111, guid: c4e2b5122a2cd0f4cb7eedf3e61a4ba5, type: 3}
+  OrangeBody: {fileID: 8250126831958803410, guid: f1da195117b001440ab02946d29315d7, type: 3}
+  PinkBody: {fileID: 1782379144912079433, guid: 4e894279b6995ad48b1a88ec2b5aa52e, type: 3}
+  StandartHead: {fileID: 7475076081683373018, guid: 1516cb3e15917904bb6e5ad823a5f7f7, type: 3}
+  StandartBody: {fileID: 1781678287992301727, guid: ccbd294e8c7c64b4eaae1893c3105026, type: 3}
+  CurrentHead: {fileID: 7475076081683373018, guid: 1516cb3e15917904bb6e5ad823a5f7f7, type: 3}
+  CurrentBody: {fileID: 1781678287992301727, guid: ccbd294e8c7c64b4eaae1893c3105026, type: 3}
 --- !u!1 &2084179337
 GameObject:
   m_ObjectHideFlags: 0
@@ -470,3 +530,4 @@ SceneRoots:
   - {fileID: 793045839}
   - {fileID: 319459839}
   - {fileID: 2084179339}
+  - {fileID: 932616127}

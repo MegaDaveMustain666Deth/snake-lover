@@ -3,9 +3,14 @@ using UnityEngine;
 
 public class SnakeBody : MonoBehaviour
 {
-    [SerializeField] GameObject _bodyPart;
+    private GameObject _bodyPart;
 
     public List<SnakeBodyPart> SnakeBodyParts = new List<SnakeBodyPart>();
+
+    public void ChangeBodyPart(GameObject gameObject)
+    {
+        _bodyPart = gameObject;
+    }
 
 
     [ContextMenu("Add body part")]
