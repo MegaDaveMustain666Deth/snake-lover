@@ -12,8 +12,7 @@ public class ShopUI : UIToolcitController
     protected override void Initialize()
     {
         _shop = _shopAsset.CloneTree();
-        DataSave.Save save = new DataSave.Save ();
-        _amountApples = save.Apples;
+        
     }
 
     public void OpenShop()
