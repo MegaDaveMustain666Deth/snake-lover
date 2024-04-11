@@ -33,5 +33,7 @@ public class SnakeBody : MonoBehaviour
         for (int i = SnakeBodyParts.Count - 1; i > 0; i--) {
             Destroy(SnakeBodyParts[i].gameObject);
         }
+        Rigidbody rb = Snake.Instance.Haed.GetComponent<Rigidbody>();
+        rb.AddForce(Vector3.up * 10, ForceMode.Impulse);
     }
 }

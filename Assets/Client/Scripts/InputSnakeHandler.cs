@@ -22,19 +22,19 @@ public class InputSnakeHandler : MonoBehaviour
 
     public void SubscribeSnake()
     {
-        _input.Player.Up.started += OnUp;
-        _input.Player.Down.started += OnDown;
-        _input.Player.Left.started += OnLeft;
-        _input.Player.Right.started += OnRight;
+        _input.Player.Up.started += OnLeft;
+        _input.Player.Down.started += OnRight;
+        _input.Player.Left.started += OnDown;
+        _input.Player.Right.started += OnUp;
         _input.Player.Pause.started += OnOpenPause;
     }
 
     public void UnsubscribeSnake()
     {
-        _input.Player.Up.started -= OnUp;
-        _input.Player.Down.started -= OnDown;
-        _input.Player.Left.started -= OnLeft;
-        _input.Player.Right.started -= OnRight;
+        _input.Player.Up.started -= OnLeft;
+        _input.Player.Down.started -= OnRight;
+        _input.Player.Left.started -= OnDown;
+        _input.Player.Right.started -= OnUp;
         _input.Player.Pause.started -= OnOpenPause;
     }
 

@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Barrier
   - Apple
+  - Snake
   layers:
   - Default
   - TransparentFX

@@ -8,7 +8,7 @@ public class Snake : PersistentSingleton<Snake>
     [SerializeField] private SnakeBody _body;
     
     public SnakeMotor Movement => _movement;
-    public SnakeBodyPart Head => _head;
+    public SnakeBodyPart Haed => _head;
     public SnakeBody Body => _body;
 
     private void Start()

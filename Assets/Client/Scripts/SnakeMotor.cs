@@ -40,7 +40,7 @@ public class SnakeMotor : MonoBehaviour
         if(_direction != Vector2Int.down)
         {
             _direction = Vector2Int.up;
-            Snake.Instance.Head.transform.localRotation = Quaternion.Euler(0, 0, 0);
+            Snake.Instance.Haed.transform.localRotation = Quaternion.Euler(0, 0, 0);
         }
     }
 
@@ -49,7 +49,7 @@ public class SnakeMotor : MonoBehaviour
         if(_direction != Vector2Int.up)
         {
             _direction = Vector2Int.down;
-            Snake.Instance.Head.transform.localRotation = Quaternion.Euler(0, 180, 0);
+            Snake.Instance.Haed.transform.localRotation = Quaternion.Euler(0, 180, 0);
         }
     }
 
@@ -58,7 +58,7 @@ public class SnakeMotor : MonoBehaviour
         if(_direction != Vector2Int.right)
         {
             _direction = Vector2Int.left;
-            Snake.Instance.Head.transform.localRotation = Quaternion.Euler(0, -90, 0);
+            Snake.Instance.Haed.transform.localRotation = Quaternion.Euler(0, -90, 0);
         }
     }
 
@@ -67,7 +67,7 @@ public class SnakeMotor : MonoBehaviour
         if(_direction != Vector2Int.left)
         {
             _direction = Vector2Int.right;
-            Snake.Instance.Head.transform.localRotation = Quaternion.Euler(0, 90, 0);
+            Snake.Instance.Haed.transform.localRotation = Quaternion.Euler(0, 90, 0);
         }
     }
 }

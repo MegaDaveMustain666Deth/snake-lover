@@ -11,7 +11,7 @@ public class SnakeBodyPart : HitBox
             Snake.Instance.Body.AddBodyPart();
             Destroy(other.gameObject);
         }
-        else if(other.gameObject.CompareTag("Barrier"))
+        if(other.gameObject.CompareTag("Barrier") || other.gameObject.CompareTag("Snake"))
         {
             Snake.Instance.Body.Dead();
         }
