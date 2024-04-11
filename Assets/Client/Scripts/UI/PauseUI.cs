@@ -44,7 +44,7 @@ public class PauseUI : UIToolcitController
         _onPause = false;
     }
 
-    public void ExitToMenu()
+    private void ExitToMenu()
     {
         Time.timeScale = 1;
         _onPause = false;

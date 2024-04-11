@@ -17,7 +17,6 @@ public class Snake : PersistentSingleton<Snake>
 
     private void Start()
     {
-        MaxScore = PlayerPrefs.GetFloat("MaxScore");
         AmountApples = 0;
         _input.SubscribeSnake();
     }
