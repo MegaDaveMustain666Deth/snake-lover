@@ -4,6 +4,7 @@
         <ui:VisualElement style="flex-grow: 1; width: 660px; background-color: rgba(0, 0, 0, 0.77); align-items: center; justify-content: center;">
             <ui:Label tabindex="-1" text="Buhf" parse-escape-sequences="true" display-tooltip-when-elided="true" class="DefoltText" />
             <ui:Button text="Play" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Play" focusable="true" class="DefoltButton" style="-unity-text-align: middle-center; font-size: 55px;" />
+            <ui:Button text="Shop" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Shop" focusable="true" class="DefoltButton" style="-unity-text-align: middle-center; font-size: 55px;" />
             <ui:Button text="Exit" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Exit" class="DefoltButton" style="width: 400px; height: 110px; font-size: 55px; -unity-text-align: middle-center;" />
         </ui:VisualElement>
     </ui:VisualElement>

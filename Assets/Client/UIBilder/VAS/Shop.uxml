@@ -8,7 +8,7 @@
             <ui:Label tabindex="-1" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Apples" style="height: 68px; width: 163px; left: 11px; font-size: 60px;" />
         </ui:Label>
         <ui:Label tabindex="-1" text="Shop" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Label" class="DefoltText" style="width: 678px; top: -87px; height: 92px; background-color: rgba(0, 0, 0, 0.78);" />
-        <ui:ScrollView scroll-deceleration-rate="0,135" elasticity="0,1" horizontal-scroller-visibility="Hidden" vertical-scroller-visibility="Hidden" touch-scroll-type="Clamped" style="height: 696px; width: 1218px; background-color: rgba(0, 0, 0, 0.78); top: -83px;">
+        <ui:ScrollView scroll-deceleration-rate="0" elasticity="0" horizontal-scroller-visibility="Hidden" vertical-scroller-visibility="Hidden" touch-scroll-type="Clamped" mouse-wheel-scroll-size="50" elastic-animation-interval-ms="50" style="height: 696px; width: 1218px; background-color: rgba(0, 0, 0, 0.78); top: -83px;">
             <ui:VisualElement name="text" style="flex-grow: 1; flex-direction: row;">
                 <ui:Label tabindex="-1" text="Snake head" parse-escape-sequences="true" display-tooltip-when-elided="true" class="DefoltText" style="height: 147px; top: auto;" />
             </ui:VisualElement>

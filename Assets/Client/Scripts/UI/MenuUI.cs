@@ -23,6 +23,7 @@ public class MenuUI : UIToolcitController
         ResetContainer(_menu);
 
         Button start = _container.Q<Button>("Play");
+        Button shop = _container.Q<Button>("Shop");
         Button exit = _container.Q<Button>("Exit");
 
         start.clicked += () =>
@@ -30,6 +31,7 @@ public class MenuUI : UIToolcitController
             SceneManager.LoadScene("SampleScene");
             _gameIU.InGame();
         };
+        shop.clicked += () => _shop.OpenShop();
         exit.clicked += () =>
         {
             _saveManager.SaveGame();
